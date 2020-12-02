@@ -1,0 +1,132 @@
+{% extends 'adminapp/base.html' %}
+{% load static %}
+{% load my_tags %}
+{% block content %}
+
+
+<div class="container mb-5">
+<div class="row">
+    <div class="col text-center">
+
+            <a href="{% url 'admin:game_create_from_type' view.game_type %}" class="btn btn-info" role="button">
+            create game
+            </a>
+
+        </div>
+</div>
+</div>
+
+
+    <div class="container mb-3 border border-dark">
+    <div class="row">
+        <div class="col text-center">
+            <h4 class="text-center">
+                game name
+            </h4>
+        </div>
+        <div class="col-3 text-center">
+            <h4 class="text-center">
+                description
+            </h4>
+        </div>
+        <div class="col text-center">
+            <h4 class="text-center">
+                short description
+            </h4>
+        </div>
+        <div class="col text-center">
+            <h4 class="text-center">
+                game type
+            </h4>
+        </div>
+        <div class="col text-center">
+            <h4 class="text-center">
+                price
+            </h4>
+        </div>
+        <div class="col-3 text-center">
+            <h4 class="text-center">
+                game image
+            </h4>
+        </div>
+        <div class="col text-center">
+            <h4 class="text-center">
+                quantity
+            </h4>
+        </div>
+    </div>
+    </div>
+
+
+
+
+        {% for game in object_list %}
+                <div class="container mb-3 border border-primary"
+                {% if game.is_active == False %}
+                style="opacity: 50%"
+                {% endif %}>
+            <div class="row">
+            <div class="col">
+                <p class="text-center">
+                    {{ game.name }}
+                </p>
+            </div>
+            <div class="col-3">
+                <p class="text-center">
+                    {{game.description}}
+                </p>
+            </div>
+            <div class="col">
+                <p class="text-center">
+                    {{game.short_desc}}
+                </p>
+            </div>
+            <div class="col">
+                <p class="text-center">
+                    {{game.type}}
+                </p>
+            </div>
+            <div class="col">
+                <p class="text-center">
+                    {{game.price}}
+                </p>
+            </div>
+            <div class="col-3">
+                <p class="text-center">
+                    <a href="{% url 'mainapp:game' game.pk %}"><img src="{{game.image|media_folder_games}}" alt="game_image" style="cursor: pointer"></a>
+                </p>
+            </div>
+            <div class="col">
+                <p class="text-center">
+                    {{game.quantity}}
+                </p>
+            </div>
+            </div>
+    <div class="row mb-5">
+        <div class="col-2 text-center">
+                <a href="{% url 'admin:game_update' game.pk %}" class="btn btn-secondary" role="button">edit game</a>
+        </div>
+        <div class="col-2 text-center">
+            {% if game.is_active == True %}
+                <a href="{% url 'admin:game_delete' game.pk %}" class="btn btn-danger" role="button">delete game</a>
+            {% else %}
+            <a href="{% url 'admin:game_delete' game.pk %}" class="btn btn-danger" role="button">restore game</a>
+            {% endif %}
+        </div>
+        <div class="col-8"></div>
+        </div>
+            </div>
+    {% endfor %}
+<div class="container mb-5">
+    <div class="row">
+        <div class="col text-center">
+
+        <a href="{% url 'admin:game_types' %}" class="btn btn-primary" role="button">
+            back to game types
+        </a>
+
+        </div>
+    </div>
+    </div>
+
+{% endblock %}

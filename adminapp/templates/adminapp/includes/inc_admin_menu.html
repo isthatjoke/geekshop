@@ -1,0 +1,26 @@
+{% load static %}
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-2">
+            <a href="{% url 'main' %}" class="btn btn-primary" role="button">back to the site</a>
+        </div>
+        <div class="col-2">
+            <a href="{% url 'adminapp:admin' %}" class="btn btn-primary" role="button">admin</a>
+        </div>
+        <div class="col-2">
+            <a href="{% url 'adminapp:users' %}" class="btn btn-primary" role="button">users</a>
+        </div>
+        <div class="col-2">
+            {% if request.resolver_match.url_name != 'games' %}
+            <a href="{% url 'adminapp:game_create' %}" class="btn btn-primary" role="button">create game</a>
+            {% endif %}
+        </div>
+        <div class="col-2">
+            <a href="{% url 'adminapp:game_types' %}" class="btn btn-primary" role="button">game types</a>
+        </div>
+        <div class="col-2">
+            <a href="{% url 'adminapp:orders' %}" class="btn btn-primary" role="button">orders</a>
+        </div>
+    </div>
+</div>

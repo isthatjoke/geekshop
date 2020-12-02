@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+h3 {
+    color: #f44336;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.container-main {
+    background: url(../img/main_background.png) no-repeat center;
+    background-size: cover;
+    padding-bottom: 34.75%;
+    width: 100%;
+    height: 0;
+
+}
+
+.navbar-brand {
+    font-family: poppins, sans-serif
+}
+
+.main-text {
+    font-size: 30px;
+    margin-top: 20%;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+.social-icons {
+    min-width:  240px;
+}
+
+/*about-us*/
+
+.container-about-us {
+    margin-top: 2%;
+}
+
+
+
+
+.container-about-us p {
+    color: #999999;
+    font-family: roboto-condensed, sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 12px;
+    letter-spacing: 0.12px;
+}
+
+.container-about-us img {
+    margin-top: 5%;
+}
+
+/*services*/
+
+.container-services {
+    background-color: #f7f7f7;
+    margin-top: 2%;
+}
+
+
+.container-services h6 {
+    color: #000000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.container-services h6 .red {
+    color: red;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.container-services p {
+    color: #999999;
+    font-family: roboto-condensed, sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 12px;
+    letter-spacing: 0.14px;
+}
+
+.container-services a {
+    display: inline-block;
+}
+
+/*.container-services img {*/
+/*    vertical-align: middle;*/
+/*    background: url(../img/services_branch_red.png) 100% 100% no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+
+/*.container-services a:hover {*/
+/*    cursor: pointer;*/
+/*    background: url(../img/services_branch_red.png) no-repeat 50% 50%;*/
+/*}*/
+
+/*.container-services a:hover img {*/
+/*  opacity: 0;*/
+/*}*/
+
+
+
+
+
+
+/*testimonial*/
+
+.container-testimonial {
+    margin-top: 5%;
+    background: url(../img/testimonial.png) no-repeat center;
+    background-size: cover;
+    padding-bottom: 27.96%;
+    width: 100%;
+    height: 0;
+}
+
+.container-testimonial h4 {
+    color: #ffffff;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 36px;
+    margin-top: 5%;
+}
+
+.container-testimonial h5 {
+    color: #ffffff;
+    font-family: "Roboto - Bold Condensed";;
+    font-weight: 500;
+    line-height: 36px;
+    margin-bottom: 5%;
+}
+
+.container-testimonial p {
+    color: #ffffff;
+    font-family: "Roboto Condensed Light";
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 2%;
+}
+
+.container-testimonial .arrow p {
+    color: #ffffff;
+    font-family: "Font Awesome";
+    font-size: 30px;
+    font-weight: 400;
+    outline: 1px solid;
+}
+
+.container-testimonial .arrow p:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px 2px white;
+}
+
+
+
+/*footer*/
+
+.container-footer {
+    height: 40px;
+    background-color: #000000;
+
+}
+
+.container-footer p {
+    color: #ffffff;
+    font-family: "Arial Narrow";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.16px;
+
+}
+
+.container-footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/*gallery*/
+
+
+
+
+
+
+/*contact-us*/
+
+
+
+
+
+
+
+
+
+
+
+

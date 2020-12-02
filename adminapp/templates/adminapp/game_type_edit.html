@@ -1,0 +1,29 @@
+{% extends 'adminapp/base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <div class="container">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <form class="form-group" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input class="form-control btn btn-outline-success" type="submit" value="save">
+    </form>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    </div>
+    <div class="container">
+    <div class="row">
+    <div class="col text-center">
+            <a href="{% url 'admin:game_types' %}" class="btn btn-success">
+                back to game types
+            </a>
+        </div>
+</div>
+</div>
+
+{% endblock %}

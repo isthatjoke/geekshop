@@ -1,0 +1,42 @@
+{% if object.status == 'FM' %}
+<div class="container text-center mt-3">
+<div class="row">
+    <div class="col">
+    <a href="{% url 'ordersapp:order_forming_complete' object.pk %}" class="btn btn-outline-success" role="button">
+        Purchase Order
+    </a>
+    </div>
+</div>
+</div>
+
+    <div class="container text-center mt-3">
+<div class="row">
+    <div class="col">
+    <a href="{% url 'ordersapp:order_delete' object.pk %}" class="btn btn-outline-warning" role="button">
+        Delete Order
+    </a>
+    </div>
+</div>
+</div>
+
+{% endif %}
+
+<div class="container text-center mt-3">
+<div class="row">
+    <div class="col">
+    <a href="{% url 'ordersapp:orders_list' %}" class="btn btn-outline-info" role="button">
+        Back to orders list
+    </a>
+    </div>
+</div>
+</div>
+
+<div class="container text-center mt-3 mb-5">
+<div class="row">
+    <div class="col">
+    <a href="{% url 'main' %}" class="btn btn-outline-primary" role="button">
+        Main Page
+    </a>
+    </div>
+</div>
+</div>

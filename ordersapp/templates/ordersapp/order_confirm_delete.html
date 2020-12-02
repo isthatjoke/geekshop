@@ -1,0 +1,60 @@
+{% extends 'ordersapp/base.html' %}
+{% load static %}
+{% load my_tags %}
+
+{% block content %}
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center">
+                Do you really wanna to delete this order?
+            </h1>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+<div class="row">
+    <div class="col text-center">
+        {% include 'ordersapp/includes/inc_order_summary.html' %}
+        {% for item in object.orderitems.select_related %}
+    <div class="container text-center mt-5">
+    <div class="row">
+        <div class="col">
+            <img src="{{ item.game.image|media_folder_games }}" class="img-fluid rounded mx-auto d-block" alt="{{ item.game.short_desc }}">
+            <span>{{ item.game.type.name }}</span>
+            <br>
+            <span>{{ item.game.name }}</span>
+            <br>
+            <span>{{ item.game.price }} $</span>
+            <br>
+            {% if item.quantity > 1 %}
+            <span>quantity: {{ item.quantity }}</span>
+            {% endif %}
+            <br>
+            <span>total: {{ item.get_game_cost }} $</span>
+        </div>
+    </div>
+    </div>
+    {% endfor %}
+        <br>
+        <form class="form-group" action="{% url 'ordersapp:order_delete' object.pk %}" method="post">
+            {% csrf_token %}
+            <input class="btn btn-danger" type="submit" value="delete">
+        </form>
+    </div>
+</div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col text-center">
+            <a href="{% url 'ordersapp:orders_list' %}" class="btn btn-success">
+                Cancel
+            </a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,127 @@
+{% extends 'adminapp/base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+{#<div class="container mb-5">#}
+{#<div class="row">#}
+{#    <div class="col text-center">#}
+{#            <a href="{% url 'admin:user_create' %}" class="btn btn-info" role="button">#}
+{#            create new user#}
+{#            </a>#}
+{#        </div>#}
+{#</div>#}
+{#</div>#}
+<div class="container mb-5">
+<div class="row">
+    {% if is_paginated %}
+        <div class="col-4"></div>
+    <div class="col text-center">
+    {% if page_obj.has_previous %}
+    <a class="btn btn-info" role="button" href="?page={{page_obj.previous_page_number}}"
+            >&laquo;</a>
+        {% endif %}
+    </div>
+        <div class="col-2 text-center">
+    <p class="btn btn-info text-center" role="button">{{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</p>
+        </div>
+        <div class="col text-center">
+    {% if page_obj.has_next %}
+        <a class="btn btn-info" role="button" href="?page={{page_obj.next_page_number}}"
+       >&raquo;</a>
+        {% endif %}
+
+        </div>
+        <div class="col-4"></div>
+    {% endif%}
+</div>
+
+</div>
+    <div class="container mb-5 border border-dark">
+    <div class="row">
+            <div class="col">
+                <h4 class="text-center">user</h4>
+            </div>
+            <div class="col-2">
+                <h4 class="text-center">created at</h4>
+            </div>
+            <div class="col-2">
+                <h4 class="text-center">updated at</h4>
+            </div>
+            <div class="col-2">
+                <h4 class="text-center">status</h4>
+            </div>
+            <div class="col-2">
+                <h4 class="text-center">active</h4>
+            </div>
+            <div class="col">
+                <h4 class="text-center">paid</h4>
+            </div>
+            <div class="col-2">
+                <h4 class="text-center"></h4>
+            </div>
+            </div>
+    </div>
+        {% for order in object_list %}
+        <div class="container border border-primary">
+            <div class="row mb-2">
+            <div class="col text-center">
+                {{ order.user }}
+            </div>
+            <div class="col-2 text-center">
+                <p class="text-center">
+                    {{ order.created }}
+                </p>
+            </div>
+            <div class="col-2 text-center">
+                <p class="text-center">
+                    {{ order.updated }}
+                </p>
+            </div>
+            <div class="col-2 text-center">
+                <p class="text-center">
+                    {{ order.status }}
+                </p>
+            </div>
+            <div class="col-2 text-center">
+                <p class="text-center">
+                    {{ order.is_active }}
+                </p>
+            </div>
+            <div class="col text-center">
+                <p class="text-center">
+                    {{ order.paid }}
+                </p>
+            </div>
+            <div class="col-2 text-center"></div>
+            </div>
+
+    <div class="row mb-5">
+        <div class="col-2 text-center">
+
+                <a href="{% url 'admin:order_update' order.pk %}" class="btn btn-secondary" role="button">update order</a>
+        </div>
+        <div class="col-2 text-center">
+            {% if order.is_active == True %}
+                <a href="{% url 'admin:order_delete' order.pk %}" class="btn btn-danger" role="button">delete order</a>
+            {% else %}
+                <a href="{% url 'admin:order_delete' order.pk %}" class="btn btn-danger" role="button">restore order</a>
+            {% endif %}
+        </div>
+        <div class="col-2">
+            {% if order.is_active == True %}
+                <a href="{% url 'admin:order_details' order.id %}" class="btn btn-secondary" role="button">order details</a>
+            {% endif %}
+        </div>
+        </div>
+        </div>
+    {% endfor %}
+
+
+
+
+
+
+
+{% endblock %}

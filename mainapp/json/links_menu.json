@@ -1,0 +1,9 @@
+{
+  "links":  [
+    {"href": "main", "name": "main"},
+    {"href": "about", "name": "about"},
+    {"href": "services", "name": "services"},
+    {"href": "gallery:games", "name": "gallery"},
+    {"href": "contacts", "name": "contacts"}
+  ]
+}

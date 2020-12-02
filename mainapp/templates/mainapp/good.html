@@ -1,0 +1,121 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% load my_tags %}
+
+{% block gallery %}
+{% with game=object_list %}
+<div class="container text-center">
+    <div class="row mt-5">
+        <div class="col">
+            <img src="{{ game.image|media_folder_games }}" class="img-fluid rounded" alt="Адаптивные изображения">
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col">
+            <p>{{ game.name }}</p>
+        </div>
+    </div>
+</div>
+
+<div class="container text-center">
+    <div class="row">
+        <div class="col">
+            <p>{{ game.description }}</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container text-center mb-5">
+    <div class="row">
+        <div class="col text-right">
+            <h6>{{ game.price }} $</h6>
+        </div>
+        <div class="col text-left">
+{#            <form action="{% url 'shopping_cartapp:add' game.pk %}" method="get">#}
+{#                <button type="submit" value="Buy" class="btn btn-danger">Buy</button>#}
+{#                <input type="hidden" name="scroll" value="">#}
+{#            </form>#}
+        </div>
+    </div>
+</div>
+        <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <a href="{% url 'mainapp:games' %}" class="btn btn-primary" role="button">
+            back to gallery
+        </a>
+            </div>
+        </div>
+        </div>
+{% endwith %}
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{#<html lang="en">#}
+{##}
+{#<body>#}
+{#            {% block menu %}#}
+{#            {% include 'mainapp/includes/inc_main_menu.html' %}#}
+{#            {% endblock %}#}
+{#        {% block whole-good %}#}
+{#        <div class="whole-good clearfix">#}
+{#            <div class="good clearfix">#}
+{#                <img src="/media/{{ game.image }}" alt="big-img" class="big-img">#}
+{#            </div>#}
+{#            <div class="good clearfix">#}
+{#                <p class="game-name">{{ game.name }} </p>#}
+{##}
+{#                <p class="price">{{ game.price }} $</p>#}
+{#                <form action="{% url 'shopping_cartapp:add' game.pk %}">#}
+{#                                    <button class="buy" type="submit" value="Buy">Buy</button>#}
+{#                                </form>#}
+{##}
+{#                <p class="desc">{{ game.description }}</p>#}
+{#            </div>#}
+{#            </div>#}
+{#        {% endblock %}#}
+{#            {% block similar %}#}
+{#            <div class="our-gallery">#}
+{#            <div class="our-gallery-text">#}
+{#                <p>Similar Games</p>#}
+{#            </div>#}
+{#                <div class="big-gallery">#}
+{#                    {% for element in same_games %}#}
+{#                    <div class="gallery clearfix">#}
+{#                            <a href="{% url 'gallery:game' element.pk %}">#}
+{#                                <img class="gallery-img" src="/media/{{ element.image }}" alt="{{ element.name }}">#}
+{#                            </a>#}
+{#                            <div class="gallery-description">{{ element.description }}</div>#}
+{#                            <div class="gallery-img-text">{{ element.name }}</div>#}
+{#                            <div class="short-description">{{ element.short_desc }}</div>#}
+{#                            <div class="gallery-button">#}
+{#                                <div class="db-price">{{ element.price }} $</div>#}
+{#                                <form action="{% url 'shopping_cartapp:add' element.pk %}">#}
+{#                                    <button type="submit" value="Buy">Buy</button>#}
+{#                                </form>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    {% endfor %}#}
+{#                </div>#}
+{#                </div>#}
+{##}
+{#            {% endblock %}#}
+{#</body>#}
+{#</html>#}

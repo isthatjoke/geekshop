@@ -1,0 +1,86 @@
+{% load static %}
+
+<div class="container">
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="{% url 'main' %}">GAME-WORLD</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    {% for item in links_menu %}
+                    <li class="nav-item">
+                        <a href="{% url item.href %}"
+                        {% if request.resolver_match.url_name == item.name or item.name == 'gallery' and title == 'gallery' or item.name == 'gallery' and title == 'games' %}
+                            class="nav-link active"
+                            {% else %}
+                            class="nav-link"
+                            {% endif%}>
+                            {{ item.name|title }}
+                        </a>
+                    </li>
+                    {% endfor %}
+                    {% if user.is_authenticated %}
+                    <li class="nav-item">
+                    <div class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                           id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">
+                            {{ user.first_name|title|default:'User' }}
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="{% url 'auth:edit' %}">Profile</a>
+                            <a class="dropdown-item" href="{% url 'ordersapp:orders_list' %}">Orders</a>
+                        </div>
+                        </div>
+                    </li>
+                    {% endif %}
+
+                    {% if user.is_superuser %}
+                    <li class="nav-item">
+                        <a href="{% url 'admin:admin' %}" class="nav-link">
+                            Admin
+                        </a>
+                    </li>
+                    {% endif %}
+                    <li class="nav-item">
+                    {% if user.is_authenticated %}
+                    <a href="{% url 'auth:logout' %}" class="nav-link">
+                        Sign out
+                    </a>
+                    {% else %}
+                    <a href="{% url 'auth:login' %}" class="nav-link">
+                        Sigh in
+                    </a>
+                    {% endif %}
+                    </li>
+                    <li class="nav-item">
+                    {% if not user.is_authenticated %}
+                    <a href="{% url 'auth:register' %}" class="nav-link">
+                        Sign up!
+                    </a>
+                    {% endif %}
+                    </li>
+                    <li class="nav-item">
+                    <a href="{% url 'shopping_cartapp:shopping_cart' %}" class="nav-link">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    </li>
+                {% if not request.resolver_match.url_name == 'shopping_cart' %}
+                    {% include 'mainapp/includes/inc_shopping_cart_in_menu.html' %}
+                {% endif %}
+                    </ul>
+                <form class="form-inline my-2 my-lg-0" action="{% url 'search:search' %}">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" name="search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </nav>
+</div>
+
+
+

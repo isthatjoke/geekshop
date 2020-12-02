@@ -1,0 +1,74 @@
+{% extends 'mainapp/base.html' %}
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<body>
+            {% block menu %}
+            {% include 'mainapp/includes/inc_main_menu.html' %}
+            {% endblock %}
+        {% block whole-good %}
+        <div class="whole-good clearfix">
+            <div class="good clearfix">
+                <img src="{% static 'img/ACRR_01_Cinematic_NewYork_321742.jpg' %}" alt="big-img" class="big-img">
+                <img src="{% static 'img/ACRR_01_Cinematic_NewYork_321742.jpg' %}" alt="img-1" class="img-1">
+                <img src="{% static 'img/ACCHD_03_ParkourOnLog_321724.jpg' %}" alt="img-2" class="img-2">
+                <img src="{% static 'img/ACCHD_05_SailingSunsetVillage_321730.jpg' %}" alt="img-3" class="img-3">
+                <img src="{% static 'img/ACCHD_09_SailingSunsetByVillage_321736.jpg' %}" alt="img-4" class="img-4">
+            </div>
+            <div class="good clearfix">
+                <p class="game-name">Assasin’s Creed: </p>
+                <p class="name-red">Rogue</p>
+                <p class="price">$29.99</p>
+                <button class="buy">Buy</button>
+                <p class="desc">The plot is set in a fictional history of real world events and follows the centuries-old struggle between the Assassins, who fight for peace with free will, and the Templars, who desire peace through control. The story is set in the mid-18th century during the Seven Years' War, and follows Shay Patrick Cormac, an Assassin-turned-Templar who hunts down former members of his Brotherhood after being betrayed by them. Gameplay in Rogue is very similar to that of Black Flag with a mixture of ship-based naval exploration and third-person land-based exploration with some new features.</p>
+            </div>
+            </div>
+        {% endblock %}
+            {% block similar %}
+            <div class="similar">
+               <p class="similar-head">Similar games</p>
+                <div class="similar-big-gallery clearfix">
+                <div class="similar-whole-gallery clearfix">
+                    <div class="similar-gallery one clearfix">
+                        <div class="similar-gallery-img"><img src="{% static 'img/shadow_of_war.jpg' %}" alt="shadow_of_war"></div>
+                        <div class="similar-gallery-img-text">MIDDLE-EARTH:
+                        Shadow Of War</div>
+                        <div class="similar-gallery-button">
+                            <button>Buy</button>
+                        </div>
+                    </div>
+                    <div class="similar-gallery two clearfix">
+                        <div class="similar-gallery-img"><img src="{% static 'img/dishonored.jpg' %}" alt="dishonored"></div>
+                        <div class="similar-gallery-img-text">DISHONORED 2
+                        </div>
+                        <div class="similar-gallery-button">
+                            <button>Buy</button>
+                        </div>
+                    </div>
+                    <div class="similar-gallery three clearfix">
+                        <div class="similar-gallery-img">
+                        <a href=""><img src="{% static 'img/Thief.jpg' %}" alt="Thief">
+                            </a>
+                        </div>
+                        <div class="similar-gallery-img-text">THIEF
+                        </div>
+                        <div class="similar-gallery-button">
+                            <button>Buy</button>
+                        </div>
+                    </div>
+                    <div class="similar-gallery four clearfix">
+                        <div class="similar-gallery-img">
+                        <a href="#"><img src="{% static 'img/hitman.jpg' %}" alt="hitman">
+                            </a></div>
+                        <div class="similar-gallery-img-text">HITMAN</div>
+                        <div class="similar-gallery-button">
+                            <button>Buy</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            {% endblock %}
+</body>
+</html>

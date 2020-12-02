@@ -1,0 +1,82 @@
+[
+  {
+    "type": "war-games",
+    "name": "World of Tanks",
+    "image": "games_images/wot.jpg",
+    "short_desc": "client-side massively multiplayer online game",
+    "description": "World of Tanks is a client-side massively multiplayer online arcade tank simulator game in real time featuring combat vehicles from the mid-20th century. The game was developed by the Belarusian studio Wargaming.net.",
+    "price": "9.99",
+    "quantity": 20
+  },
+  {
+    "type": "war-games",
+    "name": "World of Warships",
+    "image": "games_images/World_of_Warships.jpg",
+    "short_desc": "client-side massively multiplayer online game",
+    "description": "World of Warships is a computer, client-side massively multiplayer online game in real time in the genre of an arcade simulator of naval battles in the historical setting of the First and Second World Wars, announced on August 16, 2011 by the publisher and developer of online games by the international company Wargaming.net,",
+    "price": "9.99",
+    "quantity": 20
+  },
+  {
+    "type": "shooter",
+    "name": "Battlefield 1",
+    "image": "games_images/bf1.jpg",
+    "short_desc": "a multi-platform first-person shooter",
+    "description": "Battlefield 1 is a multi-platform first-person shooter PC game, the fifteenth in the Battlefield series, developed by DICE and published by Electronic Arts for Windows, PlayStation 4 and Xbox One platforms. The game was announced on May 6, 2016 and released on October 21, 2016.",
+    "price": "19.99",
+    "quantity": 15
+  },
+  {
+    "type": "shooter",
+    "name": "Battlefield 4",
+    "image": "games_images/bf4.jpg",
+    "short_desc": "the twelfth multiplatform first-person shooter",
+    "description": "Battlefield 4 is the twelfth multiplatform first-person shooter PC game developed by DICE and published by Electronic Arts for PC, PlayStation 3, PlayStation 4, Xbox 360 and Xbox One. The game was released on October 29, 2013.",
+    "price": "25.99",
+    "quantity": 25
+  },
+  {
+    "type": "shooter",
+    "name": "Call of Duty: Infinite Warfare",
+    "image": "games_images/cod.jpg",
+    "short_desc": "first-person shooter",
+    "description": "Call of Duty: Infinite Warfare is a multi-platform fantasy first-person shooter set in the setting of the near future, developed by the American company Infinity Ward and published by Activision. It is the thirteenth main game in the Call of Duty series. The game was released on November 4, 2016.",
+    "price": "27.99",
+    "quantity": 25
+  },
+  {
+    "type": "action",
+    "name": "STAR WARS: BATTLEFRONT II",
+    "image": "games_images/bf2.jpg",
+    "short_desc": "first-person shooter computer game",
+    "description": "Star Wars: Battlefront II is a first-person shooter computer game with the ability to switch to a third-person view, set in the Star Wars universe, the fourth game in the Star Wars Battlefront series, which is a continuation of the previous part. The game was developed by the Swedish company EA DICE in collaboration with Criterion Games and Motive Studios and published by Electronic Arts for Windows, PlayStation 4 and Xbox One platforms.",
+    "price": "16.99",
+    "quantity": 15
+  },
+  {
+    "type": "action",
+    "name": "Assassin's Creed Rogue",
+    "image": "games_images/assassin.jpg",
+    "short_desc": "Assassin's Creed Rogue is an action-adventure computer game",
+    "description": "Assassin's Creed Rogue is an action-adventure computer game from the Assassin's Creed series with elements of stealth action developed by Ubisoft for the PlayStation 3 and Xbox 360 platforms. The version of the game for personal computers was released on March 10, 2015.",
+    "price": "20.99",
+    "quantity": 17
+  },
+  {
+    "type": "action",
+    "name": "FOR HONOR",
+    "image": "games_images/for_honor.jpg",
+    "short_desc": "computer game",
+    "description": "For Honor (from English - \"For Honor\") - a computer game, hack and slash fighting game with a third-person view. Released by Ubisoft for PC, PlayStation 4 and Xbox One. In For Honor, players can control various forms of historical soldiers and warriors, from different factions, namely Vikings, Knights and Samurai (from October 2018, a new Wu Lin faction). The game takes place in a medieval setting.",
+    "price": "15.99",
+    "quantity": 10
+  },
+  {
+    "type": "action",
+    "name": "Tomb Raider",
+    "short_desc": "computer game",
+    "description": "Tomb Raider is a cross-platform computer game in the genre of third-person action-adventure RPG elements that was released on PlayStation 3, Xbox 360 and PC on March 5, 2013, also known as Tomb Raider 9, Tomb Raider: Ascension and Cryptids.",
+    "price": "12.99",
+    "quantity": 8
+  }
+]

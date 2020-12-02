@@ -1,0 +1,11 @@
+<div class="h2 text-center head">
+    {% if  request.resolver_match.url_name == 'login' %}
+          Sign in
+    {% endif %}
+    {% if  request.resolver_match.url_name == 'register' %}
+          Registration
+    {% endif %}
+    {% if  request.resolver_match.url_name == 'edit' %}
+          Editing profile
+    {% endif %}
+            </div>

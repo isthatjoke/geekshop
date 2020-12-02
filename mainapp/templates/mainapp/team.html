@@ -1,0 +1,110 @@
+{% extends 'mainapp/base.html'%}
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<body>
+{% block menu %}
+    {% include 'mainapp/includes/inc_main_menu.html' %}
+{% endblock %}
+{% block our-team %}
+        {% include 'mainapp/includes/inc_our_team.html' %}
+        {% endblock %}
+</body>
+</html>
+
+
+temp
+
+{% block gallery_our-gallery %}
+        <div class="our-gallery">
+            <div class="our-gallery-text">
+                <p>Our Gallery</p>
+                {% block submenu %}
+                {% include 'mainapp/includes/inc_gallery_sub_menu.html' %}
+                {% endblock %}
+            </div>
+
+
+        <div class="container mb-5">
+            <div class="row">
+             {% if is_paginated %}
+        <div class="col-4"></div>
+    <div class="col text-center">
+    {% if page_obj.has_previous %}
+    <a class="btn btn-info" role="button" href="?page={{page_obj.previous_page_number}}"
+            >&laquo;</a>
+        {% endif %}
+    </div>
+        <div class="col-2 text-center">
+    <p class="btn btn-info text-center" role="button">{{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</p>
+        </div>
+        <div class="col text-center">
+    {% if page_obj.has_next %}
+        <a class="btn btn-info" role="button" href="?page={{page_obj.next_page_number}}"
+       >&raquo;</a>
+        {% endif %}
+
+        </div>
+        <div class="col-4"></div>
+    {% endif%}
+</div>
+
+</div>
+
+            <div class="big-gallery">
+                    {% for game in object_list %}
+                        <div class="gallery clearfix">
+                            <a href="{% url 'gallery:game' game.pk %}" class="gallery-img">
+                                <img src="/media/{{ game.image }}" alt="{{ game.name }}">
+                            </a>
+                            <div class="gallery-description">{{ game.description }}</div>
+                            <div class="gallery-img-text">{{ game.name }}</div>
+                            <div class="short-description">{{ game.short_desc }}</div>
+                            <div class="gallery-button">
+                                <div class="db-price">{{ game.price }} $</div>
+                                <form action="{% url 'shopping_cartapp:add' game.pk %}" method="get">
+                                    <button type="submit" value="Buy">Buy</button>
+                                    <input type="hidden" name="scroll" value="">
+                                </form>
+                            </div>
+                        </div>
+                    {% endfor %}
+            </div>
+
+
+
+
+            <div class="show-more">
+                <p class="show-more-text">Show more games
+                <img src="{% static 'img/right-arrow.jpg' %}" alt="" class="show-more-arrow"></p>
+                <a href="#" class="show-more-hyp"><img src="{% static 'img/square_2.svg' %}" alt="" class="show-more-square"></a>
+            </div>
+            <div class="main-purpose clearfix">
+                <div class="purpose clearfix">
+                    <img src="{% static 'img/532219.jpg' %}" alt="" class="por-img-1">
+                    <p class="discount">DISCOUNT</p>
+                    <p class="game-name game-1">CALL OF DUTY:
+                    Modern Warfare 3</p>
+                   <div class="whole-price">
+                    <p class="gallery-price clearfix">$14.44</p>
+                    <p class="slash-price">/</p>
+                    <p class="price-disc">$28.90</p>
+                    </div>
+                    <button class="game-buy">Buy</button>
+                </div>
+                <div class="purpose clearfix">
+                    <img src="{% static 'img/cda8d63e371e3da4b332164c3da4ada5.jpg' %}" alt="" class="por-img-2">
+                    <p class="discount">DISCOUNT</p>
+                    <p class="game-name game-2">MEDAL OF HONOR</p>
+                    <div class="whole-price">
+                    <p class="gallery-price clearfix">$15.96</p>
+                    <p class="slash-price">/</p>
+                    <p class="price-disc">$29.99</p>
+                    </div>
+                    <button class="game-buy">Buy</button>
+                </div>
+            </div>
+        </div>
+
+        {% endblock %}

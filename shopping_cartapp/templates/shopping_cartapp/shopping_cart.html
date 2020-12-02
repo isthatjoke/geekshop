@@ -1,0 +1,26 @@
+{% extends 'shopping_cartapp/base.html' %}
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+
+
+
+
+<body>
+{% block content %}
+<div class="container mb-5 mt-5">
+    <div class="row">
+    <div class="col">
+<div class="shopping-cart-list">
+{% include 'shopping_cartapp/includes/inc_shopping_cart_list.html' %}
+</div>
+    </div>
+    </div>
+</div>
+
+{% endblock %}
+
+</body>
+
+</html>

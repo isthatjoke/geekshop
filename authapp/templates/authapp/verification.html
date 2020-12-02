@@ -1,0 +1,24 @@
+{% extends 'authapp/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container text-center">
+<div class="row">
+    <div class="col">
+        {% if user.is_authenticated %}
+    <h3>Congratulations!</h3>
+    <br>
+    <h4>User {{user.username}} confirmed.</h4>
+            {% else %}
+            <h3>Verification error</h3>
+  {% endif %}
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <a href="{% url 'main' %}" class="btn btn-info" role="button">main</a>
+    </div>
+</div>
+</div>
+
+{% endblock %}

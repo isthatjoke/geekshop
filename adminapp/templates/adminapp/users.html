@@ -1,0 +1,136 @@
+{% extends 'adminapp/base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<div class="container mb-5">
+<div class="row">
+    <div class="col text-center">
+            <a href="{% url 'admin:user_create' %}" class="btn btn-info" role="button">
+            create new user
+            </a>
+        </div>
+</div>
+</div>
+<div class="container mb-5">
+<div class="row">
+    {% if is_paginated %}
+        <div class="col-4"></div>
+    <div class="col text-center">
+    {% if page_obj.has_previous %}
+    <a class="btn btn-info" role="button" href="?page={{page_obj.previous_page_number}}"
+            >&laquo;</a>
+        {% endif %}
+    </div>
+        <div class="col-2 text-center">
+    <p class="btn btn-info text-center" role="button">{{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</p>
+        </div>
+        <div class="col text-center">
+    {% if page_obj.has_next %}
+        <a class="btn btn-info" role="button" href="?page={{page_obj.next_page_number}}"
+       >&raquo;</a>
+        {% endif %}
+
+        </div>
+        <div class="col-4"></div>
+    {% endif%}
+</div>
+
+</div>
+    <div class="container mb-5 border border-dark">
+    <div class="row">
+            <div class="col">
+                <h4 class="text-center">user name</h4>
+            </div>
+            <div class="col-2">
+                <h4 class="text-center">user role</h4>
+            </div>
+            <div class="col-2">
+                <h4 class="text-center">first name</h4>
+            </div>
+            <div class="col-2">
+                <h4 class="text-center">last name</h4>
+            </div>
+            <div class="col-2">
+                <h4 class="text-center">mail</h4>
+            </div>
+            <div class="col">
+                <h4 class="text-center">age</h4>
+            </div>
+            <div class="col-2">
+                <h4 class="text-center">last login</h4>
+            </div>
+            </div>
+    </div>
+        {% for user in page_obj %}
+        <div class="container border border-primary"
+        {% if user.is_active == False %}
+                style="opacity: 50%"
+                {% endif %}>
+            <div class="row mb-2">
+            <div class="col text-center">
+                {% if user.username %}
+                {{ user.username }}
+                {% endif %}
+            </div>
+            <div class="col-2 text-center">
+                <p class="text-center">
+                    {% if user.is_superuser %}
+                        admin
+                    {% else %}
+                        user
+                    {% endif %}
+                </p>
+            </div>
+            <div class="col-2 text-center">
+                <p class="text-center">
+                    {% if user.first_name %}
+                    {{ user.first_name }}
+                    {% endif %}
+                </p>
+            </div>
+            <div class="col-2 text-center">
+                <p class="text-center">
+                    {% if user.last_name %}
+                    {{ user.last_name }}
+                    {% endif %}
+                </p>
+            </div>
+            <div class="col-2 text-center">
+                <p class="text-center">
+                    {{ user.email }}
+                </p>
+            </div>
+            <div class="col text-center">
+                <p class="text-center">
+                    {{ user.age }}
+                </p>
+            </div>
+            <div class="col-2 text-center">{{ user.last_login }}</div>
+            </div>
+
+    <div class="row mb-5">
+        <div class="col-2 text-center">
+
+                <a href="{% url 'admin:user_update' user.pk %}" class="btn btn-secondary" role="button">update user</a>
+        </div>
+        <div class="col-2 text-center">
+            {% if user.is_active == True %}
+                <a href="{% url 'admin:user_delete' user.pk %}" class="btn btn-danger" role="button">delete user</a>
+            {% else %}
+                <a href="{% url 'admin:user_delete' user.pk %}" class="btn btn-danger" role="button">restore user</a>
+            {% endif %}
+        </div>
+        <div class="col-8"></div>
+        </div>
+        </div>
+    {% endfor %}
+
+
+
+
+
+
+
+{% endblock %}

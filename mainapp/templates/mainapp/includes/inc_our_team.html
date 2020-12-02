@@ -1,0 +1,28 @@
+{% load static %}
+<div class="our-team">
+    <div class="team-head">
+        <p>Our Team</p>
+    </div>
+    <div class="whole-team">
+        <div class="team">
+            <div class="team-img"><img src="{% static 'img/t1.jpg' %}" alt=""></div>
+            <div class="team-main-text">Mary Jane</div>
+            {% include 'mainapp/includes/inc_main_team_text_and_icons.html' %}
+        </div>
+        <div class="team">
+            <div class="team-img"><img src="{% static 'img/t2.jpg' %}" alt=""></div>
+            <div class="team-main-text">Peter Parker</div>
+            {% include 'mainapp/includes/inc_main_team_text_and_icons.html' %}
+        </div>
+        <div class="team">
+            <div class="team-img"><img src="{% static 'img/t3.jpg' %}" alt=""></div>
+            <div class="team-main-text">John Watson</div>
+            {% include 'mainapp/includes/inc_main_team_text_and_icons.html' %}
+        </div>
+        <div class="team">
+            <div class="team-img"><img src="{% static 'img/t4.jpg' %}" alt=""></div>
+            <div class="team-main-text">Steven Wilson</div>
+            {% include 'mainapp/includes/inc_main_team_text_and_icons.html' %}
+        </div>
+    </div>
+</div>

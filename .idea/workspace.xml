@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2ccf2ff4-23eb-4f59-be49-2967ed268ca8" name="Default Changelist" comment="api" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$/.." source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$/.." source="lesson_4" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="JupyterTrust" id="93c0eed2-a1b5-434f-9d5e-d27547f154b4" />
+  <component name="ProjectId" id="1hj0XjnjI8hUcum5EmOKkGQOi2y" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="IntelliLang.Configuration" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/shopping_cartapp/templates/shopping_cartapp/includes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/searchapp/templates/searchapp" />
+      <recent name="$PROJECT_DIR$/adminapp/templates/adminapp" />
+      <recent name="$PROJECT_DIR$/ordersapp/templates/ordersapp" />
+      <recent name="$PROJECT_DIR$/geekshop/json" />
+      <recent name="$PROJECT_DIR$/adminapp/templates" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Django tests.Test: mainapp.tests_games.TestGamesTestCase.test_game_get_item">
+    <configuration name="Test: authapp.tests.TestAuthappTestCase.test_user_login" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="geekshop" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="authapp.tests.TestAuthappTestCase.test_user_login" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: mainapp.tests.TestMainappTestCase.test_mainapp_urls" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="geekshop" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="mainapp.tests.TestMainappTestCase.test_mainapp_urls" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: mainapp.tests_games.TestGamesTestCase.test_game_get_item" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="geekshop" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="mainapp.tests_games.TestGamesTestCase.test_game_get_item" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="upload" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="geekshop" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/upload" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/upload/upload.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="geekshop" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mainapp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mainapp/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="geekshop" type="Python.DjangoServer" factoryName="Django server">
+      <module name="geekshop" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.views" />
+        <item itemvalue="Python.upload" />
+        <item itemvalue="Django tests.Test: mainapp.tests_games.TestGamesTestCase.test_game_get_item" />
+        <item itemvalue="Django tests.Test: mainapp.tests.TestMainappTestCase.test_mainapp_urls" />
+        <item itemvalue="Django tests.Test: authapp.tests.TestAuthappTestCase.test_user_login" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ccf2ff4-23eb-4f59-be49-2967ed268ca8" name="Default Changelist" comment="" />
+      <created>1600509235558</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600509235558</updated>
+      <workItem from="1600509236589" duration="37380000" />
+      <workItem from="1600932022670" duration="470000" />
+      <workItem from="1600970725037" duration="6789000" />
+      <workItem from="1601021864735" duration="261000" />
+      <workItem from="1601022131159" duration="1160000" />
+      <workItem from="1601023319505" duration="3586000" />
+      <workItem from="1601029657879" duration="14743000" />
+      <workItem from="1601136294737" duration="963000" />
+      <workItem from="1601141536421" duration="5448000" />
+      <workItem from="1601160082566" duration="6179000" />
+      <workItem from="1601320847886" duration="507000" />
+      <workItem from="1601321385042" duration="8645000" />
+      <workItem from="1601402573438" duration="927000" />
+      <workItem from="1601403623190" duration="65218000" />
+      <workItem from="1601999855707" duration="9856000" />
+      <workItem from="1602012758871" duration="1295000" />
+      <workItem from="1602014132823" duration="16728000" />
+      <workItem from="1602161159677" duration="3084000" />
+      <workItem from="1602243458608" duration="103538000" />
+      <workItem from="1603052879065" duration="14733000" />
+      <workItem from="1603289800007" duration="23201000" />
+      <workItem from="1603487078347" duration="21516000" />
+      <workItem from="1603824900045" duration="100556000" />
+      <workItem from="1604837399352" duration="592000" />
+      <workItem from="1604838268449" duration="10473000" />
+      <workItem from="1604858987505" duration="249000" />
+      <workItem from="1604860236819" duration="23313000" />
+      <workItem from="1605457927224" duration="26452000" />
+      <workItem from="1606843484820" duration="2388000" />
+    </task>
+    <task id="LOCAL-00026" summary="course_2_lesson_6">
+      <created>1604947755878</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1604947755878</updated>
+    </task>
+    <task id="LOCAL-00027" summary="course_2_lesson_6">
+      <created>1605031528864</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1605031528864</updated>
+    </task>
+    <task id="LOCAL-00028" summary="course_2_lesson_7">
+      <created>1605031863387</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1605031863387</updated>
+    </task>
+    <task id="LOCAL-00029" summary="course_2_lesson_7">
+      <created>1605031987401</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1605031987401</updated>
+    </task>
+    <task id="LOCAL-00030" summary="course_2_lesson_7">
+      <created>1605033179842</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1605033179842</updated>
+    </task>
+    <task id="LOCAL-00031" summary="course_2_lesson_7">
+      <created>1605034513630</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1605034513630</updated>
+    </task>
+    <task id="LOCAL-00032" summary="course_2_lesson_7">
+      <created>1605034609406</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1605034609406</updated>
+    </task>
+    <task id="LOCAL-00033" summary="course_2_lesson_7">
+      <created>1605034849009</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1605034849009</updated>
+    </task>
+    <task id="LOCAL-00034" summary="course_2_lesson_7">
+      <created>1605035526914</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1605035526914</updated>
+    </task>
+    <task id="LOCAL-00035" summary="course_2_lesson_7">
+      <created>1605036407269</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1605036407269</updated>
+    </task>
+    <task id="LOCAL-00036" summary="course_2_lesson_7">
+      <created>1605037244448</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1605037244448</updated>
+    </task>
+    <task id="LOCAL-00037" summary="course_2_lesson_7">
+      <created>1605037361356</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1605037361356</updated>
+    </task>
+    <task id="LOCAL-00038" summary="course_2_lesson_7">
+      <created>1605037464667</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1605037464667</updated>
+    </task>
+    <task id="LOCAL-00039" summary="course_2_lesson_7">
+      <created>1605038570367</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1605038570367</updated>
+    </task>
+    <task id="LOCAL-00040" summary="course_2_lesson_7">
+      <created>1605038691628</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1605038691628</updated>
+    </task>
+    <task id="LOCAL-00041" summary="course_2_lesson_7">
+      <created>1605039451313</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1605039451313</updated>
+    </task>
+    <task id="LOCAL-00042" summary="course_2_lesson_7">
+      <created>1605039545373</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1605039545373</updated>
+    </task>
+    <task id="LOCAL-00043" summary="course_2_lesson_7">
+      <created>1605039718526</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1605039718526</updated>
+    </task>
+    <task id="LOCAL-00044" summary="course_2_lesson_7">
+      <created>1605040367456</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1605040367456</updated>
+    </task>
+    <task id="LOCAL-00045" summary="course_2_lesson_7">
+      <created>1605040713461</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1605040713461</updated>
+    </task>
+    <task id="LOCAL-00046" summary="course_2_lesson_7">
+      <created>1605040890509</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1605040890509</updated>
+    </task>
+    <task id="LOCAL-00047" summary="course_2_lesson_7">
+      <created>1605041858202</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1605041858202</updated>
+    </task>
+    <task id="LOCAL-00048" summary="course_2_lesson_7">
+      <created>1605041942744</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1605041942744</updated>
+    </task>
+    <task id="LOCAL-00049" summary="course_2_lesson_7">
+      <created>1605042702293</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1605042702293</updated>
+    </task>
+    <task id="LOCAL-00050" summary="course_2_lesson_7">
+      <created>1605042760914</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1605042760915</updated>
+    </task>
+    <task id="LOCAL-00051" summary="course_2_lesson_7">
+      <created>1605043210159</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1605043210159</updated>
+    </task>
+    <task id="LOCAL-00052" summary="course_2_lesson_7">
+      <created>1605087568136</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1605087568136</updated>
+    </task>
+    <task id="LOCAL-00053" summary="course_2_lesson_7">
+      <created>1605107648629</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1605107648629</updated>
+    </task>
+    <task id="LOCAL-00054" summary="course_2_lesson_7">
+      <created>1605107929429</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1605107929430</updated>
+    </task>
+    <task id="LOCAL-00055" summary="course_2_lesson_7">
+      <created>1605122078749</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1605122078750</updated>
+    </task>
+    <task id="LOCAL-00056" summary="course_2_lesson_7">
+      <created>1605123920022</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1605123920022</updated>
+    </task>
+    <task id="LOCAL-00057" summary="course_2_lesson_8">
+      <created>1605639085324</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1605639085324</updated>
+    </task>
+    <task id="LOCAL-00058" summary="course_2_lesson_8">
+      <created>1605642557454</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1605642557455</updated>
+    </task>
+    <task id="LOCAL-00059" summary="course_2_lesson_8">
+      <created>1605693146780</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1605693146780</updated>
+    </task>
+    <task id="LOCAL-00060" summary="course_2_lesson_8">
+      <created>1605693241084</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1605693241084</updated>
+    </task>
+    <task id="LOCAL-00061" summary="course_2_lesson_8">
+      <created>1605721797237</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1605721797237</updated>
+    </task>
+    <task id="LOCAL-00062" summary="course_2_lesson_8">
+      <created>1605723074014</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1605723074015</updated>
+    </task>
+    <task id="LOCAL-00063" summary="course_2_lesson_8">
+      <created>1605723367367</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1605723367367</updated>
+    </task>
+    <task id="LOCAL-00064" summary="course_2_lesson_8">
+      <created>1605728094614</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1605728094614</updated>
+    </task>
+    <task id="LOCAL-00065" summary="course_2_lesson_8">
+      <created>1605728737902</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1605728737902</updated>
+    </task>
+    <task id="LOCAL-00066" summary="course_2_lesson_8+">
+      <created>1605731269258</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1605731269258</updated>
+    </task>
+    <task id="LOCAL-00067" summary="course_2_lesson_8+">
+      <created>1605733137259</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1605733137259</updated>
+    </task>
+    <task id="LOCAL-00068" summary="course_2_lesson_8+">
+      <created>1605733193342</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1605733193343</updated>
+    </task>
+    <task id="LOCAL-00069" summary="course_2_lesson_8+">
+      <created>1605735236039</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1605735236039</updated>
+    </task>
+    <task id="LOCAL-00070" summary="course_2_lesson_8+">
+      <created>1605735530182</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1605735530182</updated>
+    </task>
+    <task id="LOCAL-00071" summary="course_2_lesson_8+">
+      <created>1605735712222</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1605735712222</updated>
+    </task>
+    <task id="LOCAL-00072" summary="course_2_lesson_8+">
+      <created>1605735808984</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1605735808984</updated>
+    </task>
+    <task id="LOCAL-00073" summary="course_2_lesson_8+">
+      <created>1605796516581</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1605796516581</updated>
+    </task>
+    <task id="LOCAL-00074" summary="course_2_lesson_8+">
+      <created>1605796637423</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1605796637423</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first_commit" />
+    <MESSAGE value="requeremnts" />
+    <MESSAGE value="lesson_2" />
+    <MESSAGE value="lesson_3" />
+    <MESSAGE value="lesson_4" />
+    <MESSAGE value="lesson_5" />
+    <MESSAGE value="lesson_6" />
+    <MESSAGE value="lesson_7" />
+    <MESSAGE value="lesson_8" />
+    <MESSAGE value="course_2_lesson_1" />
+    <MESSAGE value="course_2_lesson_2" />
+    <MESSAGE value="course_2_lesson_3" />
+    <MESSAGE value="course_2_lesson_4" />
+    <MESSAGE value="course_2_lesson_4_before_server" />
+    <MESSAGE value="course_2_lesson_4_before_server+db" />
+    <MESSAGE value="course_2_lesson_5" />
+    <MESSAGE value="course_2_lesson_6" />
+    <MESSAGE value="course_2_lesson_7" />
+    <MESSAGE value="course_2_lesson_8" />
+    <MESSAGE value="course_2_lesson_8+" />
+    <MESSAGE value="api" />
+    <option name="LAST_COMMIT_MESSAGE" value="api" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="354" y="135" key="#Inspections" timestamp="1604255322853">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="354" y="135" key="#Inspections/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1604255322853" />
+    <state x="449" y="281" key="#Notifications" timestamp="1601160003925">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="449" y="281" key="#Notifications/0.0.1440.900@0.0.1440.900" timestamp="1601160003925" />
+    <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605554931124">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1601999991292" />
+    <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605554931124" />
+    <state x="462" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604085704714">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="462" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1601022545879" />
+    <state x="462" y="259" key="#com.intellij.fileTypes.FileTypeChooser/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1604085704714" />
+    <state x="408" y="193" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1604838151198">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="408" y="193" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1604838151198" />
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604326146872">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1604326146872" />
+    <state x="458" y="207" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.811@0.23.1440.811" timestamp="1604326027170" />
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1602264682516" />
+    <state width="1398" height="370" key="GridCell.Tab.0.bottom" timestamp="1605867718768">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="370" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605867718768" />
+    <state width="1398" height="370" key="GridCell.Tab.0.bottom/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605558046251" />
+    <state width="1398" height="370" key="GridCell.Tab.0.center" timestamp="1605867718766">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="370" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605867718766" />
+    <state width="1398" height="370" key="GridCell.Tab.0.center/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605558046250" />
+    <state width="1398" height="370" key="GridCell.Tab.0.left" timestamp="1605867718765">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="370" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605867718765" />
+    <state width="1398" height="370" key="GridCell.Tab.0.left/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605558046248" />
+    <state width="1398" height="370" key="GridCell.Tab.0.right" timestamp="1605867718767">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="370" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605867718767" />
+    <state width="1398" height="370" key="GridCell.Tab.0.right/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605558046250" />
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1601999645704">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601999645704" />
+    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1601999645702">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1601999645702" />
+    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1601999645702">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1601999645702" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1601999645703">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1601999645703" />
+    <state width="221" height="457" key="HiddenNamespacesPopup" timestamp="1603480096510">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="221" height="457" key="HiddenNamespacesPopup/0.0.1440.900@0.0.1440.900" timestamp="1600982308047" />
+    <state width="221" height="457" key="HiddenNamespacesPopup/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1603480096510" />
+    <state x="144" y="79" key="MergeDialog" timestamp="1605731154114">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="144" y="79" key="MergeDialog/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605731154114" />
+    <state x="229" y="89" key="SettingsEditor" timestamp="1604838109437">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1603289846936" />
+    <state x="229" y="89" key="SettingsEditor/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1604838109437" />
+    <state x="450" y="200" width="540" height="524" key="StructurePopup" timestamp="1604169621176">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="450" y="200" width="540" height="524" key="StructurePopup/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1604169621176" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1605796639104">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1605107930556" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605796639104" />
+    <state x="594" y="344" width="323" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1601021932925">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="594" y="344" width="323" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1440.900@0.0.1440.900" timestamp="1601021932925" />
+    <state x="566" y="344" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$MyDatabaseScriptDialog" timestamp="1601021907050">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="566" y="344" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$MyDatabaseScriptDialog/0.0.1440.900@0.0.1440.900" timestamp="1601021907050" />
+    <state x="525" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601321007428">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="525" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1601321007428" />
+    <state x="395" y="170" key="git4idea.branch.GitSmartOperationDialog" timestamp="1605731148754">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="395" y="170" key="git4idea.branch.GitSmartOperationDialog/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605731148754" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1605733015218">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1604316967279" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1605733015218" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/geekshop$upload.coverage" NAME="upload Coverage Results" MODIFIED="1601060867578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/upload" />
+    <SUITE FILE_PATH="coverage/geekshop$Test__mainapp_tests_games_TestGamesTestCase_test_game_get_item.coverage" NAME="Test: mainapp.tests_games.TestGamesTestCase.test_game_get_item Coverage Results" MODIFIED="1605558037757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/geekshop$forms.coverage" NAME="forms Coverage Results" MODIFIED="1601414965497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/authapp" />
+    <SUITE FILE_PATH="coverage/geekshop$Test__authapp_tests_TestAuthappTestCase_test_user_login.coverage" NAME="Test: authapp.tests.TestAuthappTestCase.test_user_login Coverage Results" MODIFIED="1605550311462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/geekshop$views.coverage" NAME="views Coverage Results" MODIFIED="1600886852659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mainapp" />
+    <SUITE FILE_PATH="coverage/geekshop$Test__mainapp_tests_TestMainappTestCase_test_mainapp_urls.coverage" NAME="Test: mainapp.tests.TestMainappTestCase.test_mainapp_urls Coverage Results" MODIFIED="1605457331199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+</project>

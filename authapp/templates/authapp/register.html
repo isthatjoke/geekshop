@@ -1,0 +1,86 @@
+{% extends 'authapp/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+    <div class="row">
+    <div class="col"></div>
+    <div class="col-6">
+        {% include 'authapp/includes/inc_body_head.html' %}
+    <form class="form-group" action="{% url 'auth:register' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ register_form.as_p }}
+        <br>
+        <input class="form-control" type="submit" value="sign up">
+    <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+    </form>
+    <a href="{% url 'main' %}" class="btn btn-primary" role="button">
+            back to the main
+        </a>
+
+        </div>
+    <div class="col"></div>
+    </div>
+    </div>
+
+
+    <div class="modal" tabindex="-1" role="dialog" id="success">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Notification</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Verification message has been sent to your email</p>
+
+      </div>
+      <div class="modal-footer">
+        <a href="{% url 'main' %}" class="btn btn-primary" role="button">
+            main
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="error">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Notification</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Verification message has not been sent to your email</p>
+
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+{% if modal == 'success' %}
+    <script>
+      $(document).ready(function() {
+        $("#success").modal('show');
+      });
+    </script>
+{% endif %}
+
+{% if modal == 'error' %}
+<script>
+      $(document).ready(function() {
+        $("#error").modal('show');
+      });
+    </script>
+{% endif %}
+{% endblock %}

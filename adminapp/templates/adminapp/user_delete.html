@@ -1,0 +1,67 @@
+{% extends 'adminapp/base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+        <div class="container mb-5">
+    <div class="row mb-5">
+        <div class="col">
+            {% if object.is_active == True %}
+            <h1 class="text-center">
+                Do you really wanna to delete this user?
+            </h1>
+            {% else %}
+            <h1 class="text-center">
+                Do you really wanna to restore this user?
+            </h1>
+            {% endif %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+        {% if object.first_name %}
+            <p class="text-center">
+            {{ object.first_name}}
+            </p>
+        {% endif %}
+
+         {% if object.last_name %}
+            <p class="text-center">
+            {{ object.last_name }}
+            </p>
+        {% endif %}
+        </div>
+    </div>
+    </div>
+
+
+
+<div class="container mb-3">
+<div class="row">
+    <div class="col text-center">
+        {% if object.is_active == True %}
+        <form class="form-group" action="{% url 'admin:user_delete' object.pk %}" method="post">
+            {% csrf_token %}
+            <input class="btn btn-danger" type="submit" value="delete">
+        </form>
+        {% else %}
+        <form class="form-group" action="{% url 'admin:user_delete' object.pk %}" method="post">
+            {% csrf_token %}
+            <input class="btn btn-danger" type="submit" value="restore">
+            {% endif %}
+        </form>
+    </div>
+</div>
+</div>
+
+    <div class="container">
+    <div class="row">
+    <div class="col text-center">
+            <a href="{% url 'admin:users' %}" class="btn btn-success">
+                back to users
+            </a>
+        </div>
+</div>
+</div>
+{% endblock %}

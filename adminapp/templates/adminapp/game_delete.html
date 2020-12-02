@@ -1,0 +1,58 @@
+{% extends 'adminapp/base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center">
+                {% if object.is_active == True %}
+                Do you really wanna to delete this game?
+                {% else %}
+                Do you really wanna to restore this game?
+                {% endif %}
+            </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p class="text-center">
+            {{ object.name}}
+            </p>
+         {% if object.description %}
+            <p class="text-center">
+            {{ object.description }}
+            </p>
+        {% endif %}
+        </div>
+    </div>
+    </div>
+
+
+<div class="container mb-3">
+<div class="row">
+    <div class="col text-center">
+        {% if object.is_active %}
+        <form class="form-group" action="{% url 'admin:game_delete' object.pk %}" method="post">
+            {% csrf_token %}
+            <input class="btn btn-danger" type="submit" value="delete">
+        </form>
+        {% else %}
+        <form class="form-group" action="{% url 'admin:game_delete' object.pk %}" method="post">
+            {% csrf_token %}
+            <input class="btn btn-danger" type="submit" value="restore">
+        </form>
+        {% endif %}
+    </div>
+</div>
+</div>
+
+    <div class="container">
+    <div class="row">
+    <div class="col text-center">
+            <a href="{% url 'admin:game_types' %}" class="btn btn-success">
+                back to game types
+            </a>
+        </div>
+{% endblock %}

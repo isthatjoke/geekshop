@@ -1,0 +1,14 @@
+{% extends 'mainapp/base.html'%}
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<body>
+{% block menu %}
+    {% include 'mainapp/includes/inc_main_menu.html' %}
+{% endblock %}
+{% block services %}
+    {% include 'mainapp/includes/inc_services.html' %}
+{% endblock %}
+</body>
+</html>

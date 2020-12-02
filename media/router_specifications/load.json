@@ -1,0 +1,12 @@
+[
+{"model": "mainapp.game", "fields":
+  {
+    "type": 3,
+    "name": "Tomb Raider",
+    "short_desc": "computer game",
+    "description": "Tomb Raider is a cross-platform computer game in the genre of third-person action-adventure RPG elements that was released on PlayStation 3, Xbox 360 and PC on March 5, 2013, also known as Tomb Raider 9, Tomb Raider: Ascension and Cryptids.",
+    "price": "12.99",
+    "quantity": 8
+  }
+}
+]

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    {% block css %}
+        <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon-32x32.png' %}"/>
+        <link rel="stylesheet" href="{% static 'css/solid.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/fontawesome.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/brands.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap-grid.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% endblock %}
+    {% block js %}
+        <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    {% endblock %}
+<title>
+    {{ title|title }}
+</title>
+
+</head>
+
+<body>
+        {% block menu %}
+            {% include 'mainapp/includes/inc_main_menu.html' %}
+        {% endblock %}
+
+        {% block content %}
+        {% endblock %}
+
+        {% block contact-us %}
+            {% include 'mainapp/includes/inc_contact_us.html' %}
+        {% endblock %}
+
+        {% block footer %}
+        <div class="container-fluid container-footer mt-5 fixed-bottom">
+            <div class="row">
+                <div class="col text-center">
+                    <p>
+                        © {% now 'Y' %} Hystorical Games. Test web-site <a href="https://geekbrains.ru">geekbrains'</a> student
+                    </p>
+                </div>
+            </div>
+        </div>
+        {% endblock %}
+
+
+
+</body>
+
+</html>

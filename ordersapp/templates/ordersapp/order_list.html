@@ -1,0 +1,74 @@
+{% extends 'ordersapp/base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+    <div class="container text-center">
+    <div class="row">
+        <div class="col">
+            {% if user.first_name %}
+            {{ user.first_name }}
+                {% else %}
+                User
+            {% endif %} Orders
+        </div>
+    </div>
+    </div>
+    <div class="container text-center">
+    <div class="row">
+        <div class="col">
+            <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Made</th>
+      <th scope="col">Updated</th>
+      <th scope="col">Status</th>
+    </tr>
+  </thead>
+                <tbody>
+                {% for item in object_list %}
+                {% if item.is_active %}
+                <tr>
+                    <th scope="row">{{ item.pk }}</th>
+                    <td>{{ item.created|date:"Y-m-d H:i:s" }}</td>
+                    <td>{{ item.updated|date:"Y-m-d H:i:s" }}</td>
+                    <td>{{ item.get_status_display }}</td>
+                    <td>
+                        <a href="{% url 'ordersapp:order_read' item.pk %}"> details</a>
+                    </td>
+                    <td>
+                        {% if item.status == 'FM' %}
+                        <a href="{% url 'ordersapp:order_update' item.pk %}">update</a>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if item.status == 'FM' %}
+                        <a href="{% url 'ordersapp:order_delete' item.pk %}">delete</a>
+                        {% endif %}
+                    </td>
+                </tr>
+            {% endif %}
+            {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+    <div class="container text-center mt-3">
+    <div class="row">
+        <div class="col">
+            <a href="{% url 'ordersapp:order_create' %}" class="btn btn-success" role="button">Create new order</a>
+        </div>
+    </div>
+    </div>
+    <div class="container text-center mt-3">
+    <div class="row">
+        <div class="col">
+            <a href="{% url 'main' %}" class="btn btn-primary" role="button">Main Page</a>
+        </div>
+    </div>
+    </div>
+
+{% endblock %}

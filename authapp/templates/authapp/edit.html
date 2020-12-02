@@ -1,0 +1,38 @@
+{% extends 'authapp/base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <div class="container mt-5">
+    <div class="row">
+    <div class="col mt-5">
+        {% if not user.avatar == '' %}
+        <img src="/media/{{ user.avatar }}" alt="avatar" class="img-thumbnail rounded float-left">
+    {% endif %}
+    </div>
+    <div class="col-6">
+            {% include 'authapp/includes/inc_body_head.html' %}
+    <form class="form-group" action="{% url 'auth:edit' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ edit_form.as_p }}
+        {{ profile_form.as_p }}
+        <input class="form-control btn btn-outline-success" type="submit" value="save">
+    </form>
+
+
+    </div>
+    <div class="col"></div>
+    </div>
+    </div>
+    <div class="container text-center mb-5">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-6">
+            <a href="{% url 'main' %}" class="btn btn-primary" role="button">
+            back to the main
+        </a>
+        </div>
+        <div class="col"></div>
+    </div>
+    </div>
+{% endblock %}

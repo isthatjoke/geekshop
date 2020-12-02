@@ -1,0 +1,80 @@
+{% extends 'mainapp/base.html'%}
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<body>
+
+
+{% block hello-part %}
+
+    <div class="container container-main">
+
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 main-text">
+                <p class="text-center">Morbi in nisl auctor</p>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4 social-icons">
+                <div class="text-center">
+                    <a href="#"><img src="{% static 'img/f1.png' %}" class="img-fluid" alt="Адаптивные изображения"></a>
+                    <a href="#"><img src="{% static 'img/f2.png' %}" class="img-fluid" alt="Адаптивные изображения"></a>
+                    <a href="#"><img src="{% static 'img/f3.png' %}" class="img-fluid" alt="Адаптивные изображения"></a>
+                    <a href="#"><img src="{% static 'img/f4.png' %}" class="img-fluid" alt="Адаптивные изображения"></a>
+                </div>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="entrance">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Notification</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>This site is made solely for informational and educational purposes as part
+            of the study of the Django framework in Python. All information on the site is
+            for informational purposes only. The site is not an offer or a real online store.</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script>
+      $(document).ready(function() {
+        $("#entrance").modal('show');
+      });
+    </script>
+
+{% endblock %}
+
+{% block about-us %}
+    {% include 'mainapp/includes/inc_about.html' %}
+{% endblock %}
+
+{% block services %}
+    {% include 'mainapp/includes/inc_services.html' %}
+{% endblock %}
+
+{% block testimonial %}
+    {% include 'mainapp/includes/inc_testimonial.html' %}
+{% endblock %}
+
+
+
+</body>
+
+</html>

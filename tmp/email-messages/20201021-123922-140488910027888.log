@@ -1,0 +1,15 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: 
+ =?utf-8?b?0J/QvtC00YLQstC10YDQttC00LXQvdC40LUg0YPRh9C10YLQvdC+0Lkg0LfQsNC/?=
+ =?utf-8?b?0LjRgdC4IGhlbmRyaXhAeWFuZGV4LnJ1?=
+From: django@geekshop.local
+To: hendrix@yandex.ru
+Date: Wed, 21 Oct 2020 12:39:22 -0000
+Message-ID: 
+ <160328396209.71064.6673892539883027162@127.1.168.192.in-addr.arpa>
+
+Для подтверждения учетной записи hendrix@yandex.ru на портале     http://localhost:8000 перейдите по ссылке: 
+http://localhost:8000/auth/verify/hendrix@yandex.ru/25867cd36e46072087b51ce405a90d3181bb37de/
+-------------------------------------------------------------------------------

@@ -1,0 +1,59 @@
+{% extends 'adminapp/base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+        <div class="container mb-5">
+    <div class="row mb-5">
+        <div class="col">
+            {% if object.is_active == True %}
+            <h1 class="text-center">
+                Do you really wanna to delete this order?
+            </h1>
+            {% else %}
+            <h1 class="text-center">
+                Do you really wanna to restore this order?
+            </h1>
+            {% endif %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p class="text-center">
+                # {{ object.id }}
+            </p>
+        </div>
+    </div>
+    </div>
+
+
+
+<div class="container mb-3">
+<div class="row">
+    <div class="col text-center">
+        {% if object.is_active == True %}
+        <form class="form-group" action="{% url 'admin:order_delete' object.pk %}" method="post">
+            {% csrf_token %}
+            <input class="btn btn-danger" type="submit" value="delete">
+        </form>
+        {% else %}
+        <form class="form-group" action="{% url 'admin:order_delete' object.pk %}" method="post">
+            {% csrf_token %}
+            <input class="btn btn-danger" type="submit" value="restore">
+            {% endif %}
+        </form>
+    </div>
+</div>
+</div>
+
+    <div class="container">
+    <div class="row">
+    <div class="col text-center">
+            <a href="{% url 'admin:orders' %}" class="btn btn-success">
+                back to orders
+            </a>
+        </div>
+</div>
+</div>
+{% endblock %}

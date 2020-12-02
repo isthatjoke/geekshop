@@ -1,0 +1,14 @@
+[
+  {
+    "name": "shooter",
+    "description": "Shooter is a genre of computer games. At the time of the genre's inception, the word \"shooter\" became firmly established abroad, as a variant of describing the gameplay and a translation for the word shooter; in Russia and some other countries of the post-Soviet space, the genre was originally called \"shooter\"."
+  },
+  {
+    "name": "war-games",
+    "description": "battle-simulator"
+  },
+  {
+    "name": "action",
+    "description": "Action is a genre of computer games that emphasizes the exploitation of the player's physical capabilities, including eye-hand coordination and reaction speed."
+    }
+]

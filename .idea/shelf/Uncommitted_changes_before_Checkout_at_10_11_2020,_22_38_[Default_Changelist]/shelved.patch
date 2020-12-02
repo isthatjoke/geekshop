@@ -1,0 +1,27 @@
+Index: mainapp/templates/mainapp/good.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{% extends 'mainapp/base.html' %}\n{% load static %}\n{% load my_tags %}\n\n{% block gallery %}\n\n<div class=\"container text-center\">\n    <div class=\"row mt-5\">\n        <div class=\"col\">\n            <img src=\"{{ game.image|media_folder_games }}\" class=\"img-fluid rounded\" alt=\"Адаптивные изображения\">\n        </div>\n    </div>\n    <div class=\"row text-center\">\n        <div class=\"col\">\n            <p>{{ game.name }}</p>\n        </div>\n    </div>\n</div>\n\n<div class=\"container text-center\">\n    <div class=\"row\">\n        <div class=\"col\">\n            <p>{{ game.description }}</p>\n        </div>\n    </div>\n</div>\n\n\n<div class=\"container text-center mb-5\">\n    <div class=\"row\">\n        <div class=\"col text-right\">\n            <h6>{{ game.price }} $</h6>\n        </div>\n        <div class=\"col text-left\">\n            <form action=\"{% url 'shopping_cartapp:add' game.pk %}\" method=\"get\">\n                <button type=\"submit\" value=\"Buy\" class=\"btn btn-danger\">Buy</button>\n                <input type=\"hidden\" name=\"scroll\" value=\"\">\n            </form>\n        </div>\n    </div>\n</div>\n        <div class=\"container text-center\">\n        <div class=\"row\">\n            <div class=\"col\">\n                <a href=\"{% url 'mainapp:games' %}\" class=\"btn btn-primary\" role=\"button\">\n            back to gallery\n        </a>\n            </div>\n        </div>\n        </div>\n\n{% endblock %}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n{#<html lang=\"en\">#}\n{##}\n{#<body>#}\n{#            {% block menu %}#}\n{#            {% include 'mainapp/includes/inc_main_menu.html' %}#}\n{#            {% endblock %}#}\n{#        {% block whole-good %}#}\n{#        <div class=\"whole-good clearfix\">#}\n{#            <div class=\"good clearfix\">#}\n{#                <img src=\"/media/{{ game.image }}\" alt=\"big-img\" class=\"big-img\">#}\n{#            </div>#}\n{#            <div class=\"good clearfix\">#}\n{#                <p class=\"game-name\">{{ game.name }} </p>#}\n{##}\n{#                <p class=\"price\">{{ game.price }} $</p>#}\n{#                <form action=\"{% url 'shopping_cartapp:add' game.pk %}\">#}\n{#                                    <button class=\"buy\" type=\"submit\" value=\"Buy\">Buy</button>#}\n{#                                </form>#}\n{##}\n{#                <p class=\"desc\">{{ game.description }}</p>#}\n{#            </div>#}\n{#            </div>#}\n{#        {% endblock %}#}\n{#            {% block similar %}#}\n{#            <div class=\"our-gallery\">#}\n{#            <div class=\"our-gallery-text\">#}\n{#                <p>Similar Games</p>#}\n{#            </div>#}\n{#                <div class=\"big-gallery\">#}\n{#                    {% for element in same_games %}#}\n{#                    <div class=\"gallery clearfix\">#}\n{#                            <a href=\"{% url 'gallery:game' element.pk %}\">#}\n{#                                <img class=\"gallery-img\" src=\"/media/{{ element.image }}\" alt=\"{{ element.name }}\">#}\n{#                            </a>#}\n{#                            <div class=\"gallery-description\">{{ element.description }}</div>#}\n{#                            <div class=\"gallery-img-text\">{{ element.name }}</div>#}\n{#                            <div class=\"short-description\">{{ element.short_desc }}</div>#}\n{#                            <div class=\"gallery-button\">#}\n{#                                <div class=\"db-price\">{{ element.price }} $</div>#}\n{#                                <form action=\"{% url 'shopping_cartapp:add' element.pk %}\">#}\n{#                                    <button type=\"submit\" value=\"Buy\">Buy</button>#}\n{#                                </form>#}\n{#                            </div>#}\n{#                        </div>#}\n{#                    {% endfor %}#}\n{#                </div>#}\n{#                </div>#}\n{##}\n{#            {% endblock %}#}\n{#</body>#}\n{#</html>#}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- mainapp/templates/mainapp/good.html	(revision a42b8c1a65950c65f08368680c41be35df697955)
++++ mainapp/templates/mainapp/good.html	(date 1605037040934)
+@@ -3,7 +3,7 @@
+ {% load my_tags %}
+ 
+ {% block gallery %}
+-
++    {% for game in object_list %}
+ <div class="container text-center">
+     <div class="row mt-5">
+         <div class="col">
+@@ -48,7 +48,7 @@
+             </div>
+         </div>
+         </div>
+-
++{% endfor %}
+ {% endblock %}
+ 
+ 
