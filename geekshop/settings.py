@@ -13,8 +13,8 @@ with open(JSON_PATH + 'secret_key.json') as secret_key:
 SECRET_KEY = SECRET_KEY['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-DEBUG = False
+DEBUG = True
+# DEBUG = False
 
 # if DEBUG:
 #    def show_toolbar(request):
@@ -229,11 +229,11 @@ with open(JSON_PATH + 'gmail_email.json') as gmail:
     GMAIL = json.load(gmail)
 
 
-DOMAIN_NAME = 'djangopj.ru'
-SERVER_NAME = 'djangopj.ru'
-# DOMAIN_NAME = 'http://localhost:8000'
-# SERVER_NAME = 'http://localhost:8000'
-EMAIL_HOST = 'smtp.gmail.com'
+# DOMAIN_NAME = 'djangopj.ru'
+# SERVER_NAME = 'djangopj.ru'
+DOMAIN_NAME = 'http://localhost:8000'
+SERVER_NAME = 'http://localhost:8000'
+EMAIL_HOST = 'smtp.gmagil.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = GMAIL['EMAIL_HOST_USER']
 EMAIL_HOST_PASSWORD = GMAIL['EMAIL_HOST_PASSWORD']

@@ -34,5 +34,5 @@ class Command(BaseCommand):
             new_game = Game(**game)
             new_game.save()
 
-        ShopUser.objects.create_superuser(username='django', password='geekbrains', age=33, email='')
+        # ShopUser.objects.create_superuser(username='django', password='geekbrains', age=33, email='')
         # CREATE DATABASE "geekshop" ENCODING 'UTF8' LC_COLLATE = 'en_US.UTF-8' LC_CTYPE = 'en_US.UTF-8' TEMPLATE template0;

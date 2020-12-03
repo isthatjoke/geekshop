@@ -26,7 +26,7 @@ class Game(models.Model):
     description = models.TextField(verbose_name="description", blank=True)
     price = models.DecimalField(verbose_name="price", max_digits=6, decimal_places=2, default=0)
     quantity = models.SmallIntegerField(verbose_name="quantity at warehouse", default=0)
-    is_active = models.BooleanField(verbose_name="active", default=True, db_index=True)
+    is_active = models.BooleanField(verbose_name="active", default=False, db_index=True)
 
     def __str__(self):
         return f'{self.name} {self.type.name}'
