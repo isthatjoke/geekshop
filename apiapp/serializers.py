@@ -3,37 +3,41 @@ from mainapp.models import Game, GameTypes
 
 
 class GamesSerializer(serializers.ModelSerializer):
-    # type = serializers.RelatedField(read_only=True)
 
     class Meta:
         model = Game
-        fields = ('type', 'name', 'short_desc', 'description', 'price', 'quantity')
-
-    # name = serializers.CharField(max_length=50)
-    # short_desc = serializers.CharField(max_length=70)
-    # description = serializers.CharField(max_length=300)
-    # price = serializers.DecimalField(max_digits=6, decimal_places=2, default=0)
-    # quantity = serializers.IntegerField(default=0)
+        fields = ('pk', 'type', 'name', 'short_desc', 'description', 'price', 'quantity')
 
     def create(self, validated_data):
         return Game.objects.create(**validated_data)
 
+    def update(self, instance, validated_data):
+        instance.pk = validated_data.get('pk', instance.pk)
+        instance.type = validated_data.get('type', instance.type)
+        instance.name = validated_data.get('name', instance.name)
+        instance.short_desc = validated_data.get('short_desc', instance.short_desc)
+        instance.description = validated_data.get('description', instance.description)
+        instance.price = validated_data.get('price', instance.price)
+        instance.quantity = validated_data.get('quantity', instance.quantity)
 
-class GameTypeSerializer(serializers.Serializer):
-    name = serializers.CharField()
-    description = serializers.CharField()
+        instance.save()
+        return instance
+
+
+class GameTypeSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = GameTypes
+        fields = ('pk', 'name', 'description')
 
     def create(self, validated_data):
         return GameTypes.objects.create(**validated_data)
 
+    def update(self, instance, validated_data):
+        instance.pk = validated_data.get('pk', instance.pk)
+        instance.name = validated_data.get('name', instance.name)
+        instance.description = validated_data.get('description', instance.description)
 
-# class GamesSerializer(serializers.Serializer):
-#     type = serializers.CharField()
-#     name = serializers.CharField(max_length=50)
-#     short_desc = serializers.CharField(max_length=70)
-#     description = serializers.CharField(max_length=300)
-#     price = serializers.DecimalField(max_digits=6, decimal_places=2, default=0)
-#     quantity = serializers.IntegerField(default=0)
-#
-#     def create(self, validated_data):
-#         return Game.objects.create(**validated_data)
+        instance.save()
+        return instance
+
