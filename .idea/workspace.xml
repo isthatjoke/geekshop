@@ -13,12 +13,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ccf2ff4-23eb-4f59-be49-2967ed268ca8" name="Default Changelist" comment="api_add_games_via_api">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apiapp/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apiapp/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apiapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apiapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apiapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apiapp/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="2ccf2ff4-23eb-4f59-be49-2967ed268ca8" name="Default Changelist" comment="api_CRUD_games_and_gametypes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -287,14 +282,7 @@
       <workItem from="1605457927224" duration="26452000" />
       <workItem from="1606843484820" duration="2388000" />
       <workItem from="1607023504387" duration="3022000" />
-      <workItem from="1607110425987" duration="3054000" />
-    </task>
-    <task id="LOCAL-00028" summary="course_2_lesson_7">
-      <created>1605031863387</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1605031863387</updated>
+      <workItem from="1607110425987" duration="3412000" />
     </task>
     <task id="LOCAL-00029" summary="course_2_lesson_7">
       <created>1605031987401</created>
@@ -632,7 +620,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607028631143</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="api_CRUD_games_and_gametypes">
+      <created>1607117123768</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1607117123768</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -673,7 +668,8 @@
     <MESSAGE value="course_2_lesson_8+" />
     <MESSAGE value="api" />
     <MESSAGE value="api_add_games_via_api" />
-    <option name="LAST_COMMIT_MESSAGE" value="api_add_games_via_api" />
+    <MESSAGE value="api_CRUD_games_and_gametypes" />
+    <option name="LAST_COMMIT_MESSAGE" value="api_CRUD_games_and_gametypes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="354" y="135" key="#Inspections" timestamp="1604255322853">
@@ -758,11 +754,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="450" y="200" width="540" height="524" key="StructurePopup/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1604169621176" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1607028679316">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1607117127612">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1605107930556" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1607028679316" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1607117127612" />
     <state x="594" y="344" width="323" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1601021932925">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
